@@ -29216,9 +29216,11 @@ async function run() {
       assignees: assignees ? assignees.split('\n') : undefined
     })
 
+    console.log('Creating issue: ', response.data)
     core.setOutput('issue', response.data)
   } catch (error) {
     // Fail the workflow run if an error occurs
+    console.error('Error: ', error)
     core.setFailed(error.message)
   }
 }
