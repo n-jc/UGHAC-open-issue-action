@@ -24,7 +24,7 @@ async function run() {
     })
 
     console.log('Creating issue : ', response.data)
-    core.setOutput('issue', response.data)
+    core.setOutput('issue', response.data.html_url)
   } catch (error) {
     // Fail the workflow run if an error occurs
     console.error('Error: ', error)
