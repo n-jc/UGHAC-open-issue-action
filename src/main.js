@@ -7,7 +7,7 @@ const github = require('@actions/github')
  */
 async function run() {
   try {
-    const token = core.getInput('token')
+    const token = core.getInput('token', { required: true })
     const title = core.getInput('title')
     const body = core.getInput('body')
     const assignees = core.getInput('assignees')
