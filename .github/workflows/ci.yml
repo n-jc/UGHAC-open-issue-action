@@ -62,7 +62,5 @@ jobs:
           body: Test Issue Body
           assignees: |
             n-jc
+        
       - run: echo ${{ steps.test-action.outputs.issue }}
-      - name: Print Output
-        id: output
-        run: echo "${{ steps.test-action.outputs.time }}"
