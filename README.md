@@ -3,7 +3,8 @@
 [![GitHub Super-Linter](https://github.com/n-jc/UGHAC-open-issue-action/actions/workflows/linter.yml/badge.svg)](https://github.com/super-linter/super-linter)
 ![CI](https://github.com/n-jc/UGHAC-open-issue-action/actions/workflows/ci.yml/badge.svg)
 
-This action opens a new issue on GitHub with a title, body and a list of assignees.
+This action opens a new issue on GitHub with a title, body and a list of
+assignees.
 
 ## Inputs
 
